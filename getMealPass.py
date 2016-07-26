@@ -1,10 +1,15 @@
 # Python Script To get Meal Pass
 
+#Selenium Imports
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
+
+#IMAP imports
+import smtplib
+
 driver = webdriver.Firefox()
 driver.get("https://www.mealpass.com/")
 
@@ -47,3 +52,7 @@ except TimeoutException:
 	print("Timeout")
 #Send as an email so it can be inputted into Google
 
+serverName = " "
+sendFrom = " "
+sendTo = " "
+Message = address + res

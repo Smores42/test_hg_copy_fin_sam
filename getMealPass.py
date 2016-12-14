@@ -15,8 +15,8 @@ from email.mime.text import MIMEText
 driver = webdriver.Firefox()
 driver.get("https://www.mealpass.com/")
 
-uName = "samcesario1@gmail.com"
-pWord = "sammealpass"
+uName = ""
+pWord = ""
 
 #Click Login
 try:
